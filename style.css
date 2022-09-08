@@ -1,0 +1,19 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+.board {
+  background-color: aqua;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+}
+
+#board-container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 0.1fr);
+  grid-template-rows: repeat(var(--grid-rows), 0.1fr);
+}
