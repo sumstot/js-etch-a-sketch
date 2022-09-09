@@ -1,6 +1,10 @@
 "use strict";
 
 const grid = document.getElementById("board-container");
+const black = function (e) {
+  e.target.style.backgroundColor = "black";
+};
+// TODO create a function for rainbow
 
 const createGrid = (rows, cols) => {
   grid.style.setProperty("--grid-rows", rows);
@@ -10,6 +14,7 @@ const createGrid = (rows, cols) => {
     div.classList.add("board");
     div.classList.add("board:hover");
     div.textContent = i;
+    div.addEventListener("mouseleave", black);
     grid.appendChild(div);
   }
 };
