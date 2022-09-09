@@ -8,6 +8,7 @@ const createGrid = (rows, cols) => {
   for (let i = 0; i < rows * cols; i++) {
     let div = document.createElement("div");
     div.classList.add("board");
+    div.classList.add("board:hover");
     div.textContent = i;
     grid.appendChild(div);
   }
