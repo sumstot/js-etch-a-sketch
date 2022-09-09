@@ -14,6 +14,6 @@
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(var(--grid-cols), 0.1fr);
-  grid-template-rows: repeat(var(--grid-rows), 0.1fr);
+  grid-template-columns: repeat(var(--grid-cols), 0fr);
+  grid-template-rows: repeat(var(--grid-rows), 0fr);
 }
