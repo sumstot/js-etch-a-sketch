@@ -3,24 +3,32 @@
   --grid-rows: 1;
 }
 
-.title {
-  background-color: red;
-  width: 100vw;
-  height: 100vh;
+.etch-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.etch-a-sketch {
+  background-color: #ff686b;
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 50px;
 }
 .board {
-  background-color: aqua;
-  border: 1px solid black;
-  width: 20px;
-  height: 20px;
+  background-color: white;
+  width: 10px;
+  height: 10px;
   align-self: center;
   justify-self: center;
 }
 
 #board-container {
+  max-width: 800px;
+  max-height: 550px;
   display: grid;
   grid-template-columns: repeat(var(--grid-cols), 0fr);
   grid-template-rows: repeat(var(--grid-rows), 0fr);
@@ -29,4 +37,9 @@
 .board:hover {
   transform: scale(1.5);
   background-color: goldenrod;
+}
+
+.buttons {
+  margin-top: 25px;
+  border-radius: 10px;
 }
