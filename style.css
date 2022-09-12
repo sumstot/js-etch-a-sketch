@@ -11,19 +11,19 @@
 .etch-a-sketch {
   background-color: #ff686b;
   width: 800px;
-  height: 600px;
+  height: 700px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
   border-radius: 50px;
+  border: 1px solid black;
+  box-shadow: (0px 0px 30px #66888888);
 }
 .board {
   background-color: white;
   width: 10px;
   height: 10px;
-  align-self: center;
-  justify-self: center;
 }
 
 #board-container {
@@ -40,12 +40,10 @@
 }
 
 .inputs {
-  width: 700px;
-  height: 20px;
-  margin-top: 25px;
-  border-radius: 10px;
+  width: 780px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .slider {
@@ -80,4 +78,19 @@
   height: 80px;
   background: #ffffff;
   text-align: center;
+  margin: 10px;
+}
+
+.color-button-on {
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    red
+  );
 }

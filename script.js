@@ -6,6 +6,7 @@ const grid = document.getElementById("board-container");
 const slider = document.getElementById("myRange");
 const reset = document.getElementById("reset");
 const colorChange = document.getElementById("color-button");
+
 const createGrid = (rows, cols) => {
   grid.style.setProperty("--grid-rows", rows);
   grid.style.setProperty("--grid-cols", cols);
@@ -13,7 +14,6 @@ const createGrid = (rows, cols) => {
     let div = document.createElement("div");
     div.classList.add("board");
     div.classList.add("board:hover");
-    // div.textContent = i;
     div.addEventListener("mouseleave", rainbow);
     div.style.height = `${BOARDHEIGHT / rows}px`;
     div.style.width = `${BOARDWIDTH / cols}px`;
