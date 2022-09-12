@@ -5,7 +5,7 @@ const BOARDHEIGHT = 500;
 const grid = document.getElementById("board-container");
 const slider = document.getElementById("myRange");
 const reset = document.getElementById("reset");
-
+const colorChange = document.getElementById("color-button");
 const createGrid = (rows, cols) => {
   grid.style.setProperty("--grid-rows", rows);
   grid.style.setProperty("--grid-cols", cols);

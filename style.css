@@ -53,7 +53,7 @@
   appearance: none;
   width: 25%; /* Full-width */
   height: 25px; /* Specified height */
-  background: #d3d3d3; /* Grey background */
+  background: #ffffff; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
@@ -65,9 +65,9 @@
   appearance: none;
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
-  background: #04aa6d; /* Green background */
+  background: #ff0000; /* Green background */
   cursor: pointer; /* Cursor on hover */
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .slider:hover {
@@ -76,4 +76,8 @@
 
 .buttons {
   border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background: #ffffff;
+  text-align: center;
 }
