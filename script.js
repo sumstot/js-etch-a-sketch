@@ -4,6 +4,7 @@ const BOARDWIDTH = 500;
 const BOARDHEIGHT = 500;
 const grid = document.getElementById("board-container");
 const slider = document.getElementById("myRange");
+const reset = document.getElementById("reset");
 
 const createGrid = (rows, cols) => {
   grid.style.setProperty("--grid-rows", rows);
@@ -53,3 +54,7 @@ const rainbow = function (e) {
 };
 
 createGrid(slider.value, slider.value);
+reset.addEventListener("click", () => {
+  clearGrid();
+  createGrid(slider.value, slider.value);
+});

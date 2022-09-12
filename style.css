@@ -22,7 +22,6 @@
   background-color: white;
   width: 10px;
   height: 10px;
-  border: 0.5px solid black;
   align-self: center;
   justify-self: center;
 }
@@ -42,16 +41,17 @@
 
 .inputs {
   width: 700px;
+  height: 20px;
   margin-top: 25px;
   border-radius: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .slider {
   -webkit-appearance: none; /* Override default CSS styles */
   appearance: none;
-  width: 100%; /* Full-width */
+  width: 25%; /* Full-width */
   height: 25px; /* Specified height */
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */
@@ -72,4 +72,8 @@
 
 .slider:hover {
   opacity: 1; /* Fully shown on mouse-over */
+}
+
+.buttons {
+  border-radius: 50%;
 }
