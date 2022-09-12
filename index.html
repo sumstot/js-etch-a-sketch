@@ -12,9 +12,18 @@
     <div class="etch-container">
       <div class="etch-a-sketch">
         <div class="board-container" id="board-container"></div>
-        <div class="buttons" id="buttons">
-          <button class="color-button" id="color-button" />
-          <button class="grid-size-button" id="grid-size-button" />
+        <div class="inputs" id="buttons">
+          <button class="black-button" id="black-button" />
+          <button class="rainbow-button" id="rainbow-button" />
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="32"
+            class="slider"
+            range="min"
+            id="myRange"
+          />
           <button class="reset" id="reset" />
         </div>
       </div>
